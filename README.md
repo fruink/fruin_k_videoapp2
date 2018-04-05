@@ -38,3 +38,6 @@ Grunt to modify files
 SCSS -> CSS
 Midified JS
 
+# View and use app in browser #
+
+Clone repository onto your desktop, npm install to grab dependencies, import the included database into phpmyadmin, npm start to run the application, and then go the localhost:3000 in url section in browser
