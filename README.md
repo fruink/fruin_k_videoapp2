@@ -7,24 +7,35 @@ Using Node and Express to create a video application with routes, The routes and
 
 This app will play videos with a default load and play functionality. It also filters through categories and displays all genre selections that are available for either user to choose and watch. All the video's and images are pulled from a database that are displayed on the app. Once user clicks on a video, a lightbox will popup with the movies description, movie ratings, genre, and image of the movie poster. Social media icons are also displayed in the lightbox but are not functional at this stage of this project.
 
-part two contains
-views folder with handlebars files
+#part two contains#
+- views folder with handlebars files
 
-content.handlebars
-movies_handlebars
-home_handlebars
-movies_kids_handlebars and
-error_handlebars
+- content.handlebars
+- movies_handlebars
+- home_handlebars
+- movies_kids_handlebars and
+- error_handlebars
+
 public folder contains all stlying and script files for app
 
 Routes folder with all js files for the app
 
-content.js
+- content.js
 
-index.js
+- index.js
 
-movies.js and user.js
+- movies.js
+
+- user.js
 
 in the main folder contains the app.js for the app
 
 All code in this app has been modified using grunt and sass files
+
+NPM and package.json -added in empty scss and js files
+Built With and will contain
+Grunt to modify files
+SCSS -> CSS
+Midified JS
+Node.js to add and save dependencies / modules while creating a functional Grunt file for the overall app -untitled folder containing:
+gruntfile.js JSON package node_modules folder (ignored when uploaded to git repo)
