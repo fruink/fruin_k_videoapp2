@@ -37,5 +37,4 @@ Built With and will contain
 Grunt to modify files
 SCSS -> CSS
 Midified JS
-Node.js to add and save dependencies / modules while creating a functional Grunt file for the overall app -untitled folder containing:
-gruntfile.js JSON package node_modules folder (ignored when uploaded to git repo)
+
