@@ -31,10 +31,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // jshint: {
-    //     all: ['prod/concat.js']
-    // },
-
     sass: {
       dist: {
         options: {
@@ -97,7 +93,6 @@ module.exports = function(grunt) {
     }
   });
 
-  //Plugis used in the task
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify-es');
   // grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -107,6 +102,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  //Tasks performs when grunt run
   grunt.registerTask('default', ['concat', 'babel', 'uglify', 'sass', 'watch', 'imagemin']);
 };
