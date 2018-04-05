@@ -1,0 +1,33 @@
+<!--homepage-->
+<section class="main-section">
+  <div class="welcome-section">
+    <h1>Welcome to an online world of movies</h1>
+    <h2>Who's watching today?</h2>
+    <h4>Click below to view movies based on preference</h4>
+
+
+    {{#each users}}
+     <a href=/movies/{{user_age}} id={{user_age}}>{{user_name}}</a><!--db for user's age to watch approved movies fo kids-->
+    {{/each}}
+
+
+    <div class="users">
+    <a href="/content"><!--redirect-->
+      <div class="user"><!--site user-->
+        <i class="ion-android-person"></i><!--using ionicons.com-->
+        <h3>ADULT MOVIES</h3><!--adult profile page-->
+        <br>
+        <p>(Ages 18 &amp; up)</p>
+      </div>
+    </a>
+      <a href="/content"><!--redirect-->
+        <div class="kids"><!--using ionicons.com-->
+          <i class="ion-ios-body"></i>
+          <h3>KID MOVIES</h3><!--kids profile page-->
+          <br>
+          <p>(Ages 2 &amp; up)</p>
+      </div>
+    </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,293 @@
+/*SCSS*/
+@import "reset";
+@import "colours";
+@import "fonts";
+
+body {
+  width: 100%;
+}
+
+#container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-image: url('../images/bck_img.jpg');
+  min-height: 100vh;
+}
+
+
+header{
+  background-color: $mildblue;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  padding: 10px 30px;
+  align-content: center;
+  img{
+    width: 55%;
+    display: block;
+    margin-left: 15%;
+  }
+  #main-nav{
+    color: #fff;
+    margin-right: 10%;
+    ul li {
+      font-family: $title;
+      display: inline-flex;
+      padding: 12px;
+      a {
+        color: #fff;
+        padding: 10px;
+        line-height: 100px;
+        i {
+          padding-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.main-section{
+  background-image: url('../images/bck_img.jpg');/*adult background image (blue pattern)*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  .welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    h1, h2 {
+      font-family: $title;
+      color: #fff;
+      padding: 20px;
+    }
+    h1{
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .users{
+      width: 50%;
+      margin: 50px auto;
+      color:#fff;
+      a{
+        color:#fff;
+        text-decoration: none;
+      }
+      .user, .kids {
+        border: 2px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $lightblue;
+        height: 30vh;
+        font-family: $title;
+      }
+      i{
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+
+.movies-section{
+  @extend .content-section
+}
+
+#movies{
+  text-align: center;
+  margin: 50px 0;
+  padding-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  .cover{
+    position: relative;
+    h4{
+      position: absolute;
+      font-family: $title;
+      background-color: $blue;
+      color: #fff;
+      top: 50%;
+      width: 0;
+      line-height: 3.3rem;
+      text-align: center;
+      text-align: center;
+      opacity: 0;
+      -ms-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+      transform: rotate(20deg);
+    }
+    img{
+      width: 100%;
+    }
+  }.cover:hover{
+    h4{
+      width: 100%;
+      opacity: 1;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.content-section{
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/bck_img.jpg');
+  text-align: left;
+  width: 80%;
+  margin: 60px auto;
+  h1,h2{
+    font-family: $title;
+    color: $mildblue;
+  }
+  h1 {
+    font-size: 2.5rem;
+    padding: 20px 0;
+  }
+  h2 {
+    font-size: 1rem;
+    padding: 20px;
+  }
+  .options{
+    margin-top: 20%;
+    width: 100%;
+    margin: 0 auto;
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+    .option{
+      margin-top: 20%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      background-color: $lightblue;
+      padding: 10px;
+      margin: 10px 0;
+      color: #5191e1;
+      font-family: $title;
+      font-size: 2rem;
+      h2 {
+        font-size: 2rem;
+        color: #fff;
+      }
+      i{
+        font-size: 5rem;
+      }
+    }
+  }
+  label {
+    font-family: $text;
+    color: $mildblue;
+    font-size: 1rem;
+  }
+}
+
+#box-wrapper{
+  @extend #light-wrapper;
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .box{
+    @extend .light;
+    h2{
+      font-family: $title;
+      font-size: 3rem;
+      color:$blue;
+    }
+  }
+}
+}
+
+
+.lightbox{
+  z-index: 100;
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  #light-wrapper{
+    padding: 50px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .light{
+      display: grid;
+      width: 80%;
+      margin: 0 auto;
+      color: #fff;
+      img{
+        width: 90%;
+      }
+      .movie-info{
+        h2, h4 {
+          font-family: $title;
+        }
+        h2 {
+          font-size: 2rem;
+          color: $lightblue;
+          span{
+            margin-left: 10px;
+          }
+        }
+        h4 {
+          font-size: 1rem;
+        }
+        p{
+          font-family: $text;
+          font-size: 1rem;
+        }
+      }
+      .ion-ios-close-outline{
+        font-size: 3rem;
+        top: 60px;
+        right: 200px;
+      }
+      .social-media {
+        margin: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        i {
+          font-size: 1rem;
+          margin: 0 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 50px;
+          text-align: center;
+          height: 50px;
+          border-radius: 50px;
+        }
+      }
+    }
+    .videoMovie{
+      width: 60%;
+      height: 100%;
+      margin: 0 auto;
+      video{
+        width: 100%;
+      }
+    }
+  }
+
+  .welcome-msg{
+    margin-left:6%;
+    text-align:center;
+  }

@@ -1,0 +1,25 @@
+<section class="content-section">
+  <div class="header">
+    <img src="images/icon_favourites.png" alt="My movies icon">
+    <h1>Kids Movies</h1>
+  </div>
+
+  <fieldset>
+    <label for="input">Select category:</label>
+      <select class="select">
+          <option value="0">All</option><!--all movies from db-->
+    </select>
+  </fieldset>
+  <div id="movies">
+  {{#each movies}}
+    <div id="{{ movies_id }}" class="cover">
+      <h4>{{ movies_title }}</h4>
+      <img src="images/{{ movies_cover }}" alt="{{ movies_title }}">
+    </div>
+  {{/each}}
+  </div>
+
+</section>
+<div class="lightbox">
+
+</div>

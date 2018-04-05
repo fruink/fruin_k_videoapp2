@@ -1,0 +1,55 @@
+<!--movies page-->
+<section class="movies-section">
+
+<!--selection of movie genres-->
+  <fieldset><!--genre selection-->
+    <label for="input">Genre Search</label>
+      <select class="select">
+          <option value="0">All</option>
+            {{#each genre}}
+          <option value="{{ genre_id }}">{{ genre_name }}</option>
+            {{/each}}
+    </select>
+  </fieldset>
+
+  <br>
+  <h2><i class="ion-android-person"></i>Watch as many movies as you like and filter through our genres</h2>
+
+<!--movies from the db-->
+  <div id="movies"><!--movies available to click on and play video from db-->
+  {{#each movies}}
+    <div id="{{ movies_id }}" class="cover">
+      <h4>{{ movies_title }}</h4>
+      <img src="images/{{ movies_cover }}" alt="{{ movies_title }}"><!--collects movies from db to display on page-->
+    </div>
+  {{/each}}
+  </div>
+
+</section>
+<div class="lightbox">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

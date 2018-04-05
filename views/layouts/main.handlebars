@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><!--using ionicons for icons in this project-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet"><!--fonts-->
+  <link rel="stylesheet" href="css/main.css">
+  {{#if kidsmode}}
+    <link rel="stylesheet" href="css/kidsProfile.css">
+  {{/if}}
+
+  <title>{{ title }}</title>
+
+</head>
+<body>
+  <div id="main-container">
+    <div id="container">
+      <h1 class="hidden">Video App - school project</h1>
+      <header>
+        <img src="images/karlee_online_movies_logo.svg" alt="Movies Logo">
+        <nav id="main-nav">
+          <h1 class="hidden">App Navigation</h1>
+          <ul>
+            <!--non functional at this moment for all icons, any one will take you to the home page-->
+            <li><a href="/"><i class="ion-person-add"></i></a></li><!--redirects to content page (making a selection)-->
+            <li><a href="/"><i class="ion-grid"></i></a></li><!--no functionality yet-->
+            <li><a href="/"><i class="ion-ios-settings-strong"></i></a></li><!--no functionality yet-->
+            <li><a href="/"><i class="ion-navicon"></i></a></li><!--no functionality yet-->
+          </ul>
+        </nav>
+      </header>
+
+      {{{ body }}}
+
+    </div>
+  </div>
+  <footer>
+    <h1 class="hidden">Footer</h1>
+    <h4>Copyright &#169; online movies by Karlee</h4>
+  </footer>
+  <script src="js/prod/production.js"></script>
+
+</body>
+</html>
