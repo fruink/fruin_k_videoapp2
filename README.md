@@ -7,7 +7,7 @@ Using Node and Express to create a video application with routes, The routes and
 
 This app will play videos with a default load and play functionality. It also filters through categories and displays all genre selections that are available for either user to choose and watch. All the video's and images are pulled from a database that are displayed on the app. Once user clicks on a video, a lightbox will popup with the movies description, movie ratings, genre, and image of the movie poster. Social media icons are also displayed in the lightbox but are not functional at this stage of this project.
 
-#part two contains#
+# Part 2 Contains #
 - views folder with handlebars files
 
 - content.handlebars
